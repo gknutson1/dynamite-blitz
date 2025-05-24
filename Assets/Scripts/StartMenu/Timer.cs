@@ -21,7 +21,7 @@ public class Timer : MonoBehaviour
             timeLeft.text = string.Format("{0:N2}", time);
         }
         else {
-            handler.SendMessage("SwapFuse");
+            handler.SendMessage("EndGame");
         }
 
         if (Input.GetKeyDown(KeyCode.B))

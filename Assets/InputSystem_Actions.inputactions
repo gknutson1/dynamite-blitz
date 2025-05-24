@@ -11,7 +11,7 @@
                     "id": "351f2ccd-1f9f-44bf-9bec-d62ac5c5f408",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press",
                     "initialStateCheck": true
                 },
                 {
@@ -90,6 +90,24 @@
                     "name": "Blow",
                     "type": "Button",
                     "id": "f1c84f87-367e-4816-bcbb-ccacedfb65ae",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "BackToStart",
+                    "type": "Button",
+                    "id": "3a787e58-0b27-4e60-a14c-45bb925f2869",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Quit",
+                    "type": "Button",
+                    "id": "80f6c102-3f79-45c6-9825-6f9a0b78adad",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -490,6 +508,28 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "Blow",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b9e3304a-1018-4964-8d2c-60a0d60fd6bb",
+                    "path": "<Keyboard>/#(Y)",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "BackToStart",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a3bb9803-cae8-4ab1-ab0b-efaff24110c8",
+                    "path": "<Keyboard>/#(N)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Quit",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
