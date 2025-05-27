@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TableFlip_0: 3231172964124601714
+      TableFlip_1: 6460244197230474759
+      TableFlip_2: 7812817206906617407
+      TableFlip_3: -2149591102155756203
+      TableFlip_4: -3488373807252143371
+      TableFlip_5: 154668852970159011
+      TableFlip_6: -5635899618991157546
+      TableFlip_7: -2660364183974338097
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
