@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f5f01a21e848a7949aa39c980d4cb37a
+guid: 3aa36e4bb261ce04096efbf0e279de62
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 381458763202257988
-    second: BackgroundlessRetrowave-Background-Loop-Tutorial-Floor-Grid-removebg-preview_0
+      213: 2228992578179579022
+    second: lvl1-sprite_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BackgroundlessRetrowave-Background-Loop-Tutorial-Floor-Grid-removebg-preview_0
+      name: lvl1-sprite_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 670
-        height: 372
+        width: 736
+        height: 1295
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 444612d59b63b4500800000000000000
-      internalID: 381458763202257988
+      spriteID: e8c306da0f8feee10800000000000000
+      internalID: 2228992578179579022
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      BackgroundlessRetrowave-Background-Loop-Tutorial-Floor-Grid-removebg-preview_0: 381458763202257988
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

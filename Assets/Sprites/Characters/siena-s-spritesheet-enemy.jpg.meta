@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      siena-s-spritesheet-enemy_0: 3344686467709820001
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
