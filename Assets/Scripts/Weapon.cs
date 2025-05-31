@@ -16,12 +16,9 @@ public class Weapon : MonoBehaviour {
     public float accLosePerRound = 0.2f;
     public float accGainPerSecond = 1f;
     public float accMaxSpread = 45f;
-    
-    private float _accCur = 0f;
 
-    public float bulletSpeed = 10f;
-    public int bulletDamage = 1;
-    public Sprite bulletSprite;
+    private int damage = 0;
+    private float _accCur = 0f;
 
     public bool held = false;
 
