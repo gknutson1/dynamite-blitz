@@ -1,0 +1,13 @@
+{
+  "restrict_leaderboards": true,
+  "leaderboards": ["a", "b", "c", "d"],
+  "pool_size": 10,
+  "max_uname_len": 255,
+  "database": {
+    "username": "root",
+    "password": "1234",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "schema": "main"
+  }
+}
