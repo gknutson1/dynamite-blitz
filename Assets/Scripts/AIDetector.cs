@@ -14,6 +14,8 @@ public class AIDetector : MonoBehaviour
     private LayerMask playerLayerMask;
     [SerializeField]
     private LayerMask visibilityLayer;
+    public GameObject parent;
+    private EnemyAI eai;
 
     [field: SerializeField]
     public bool TargetVisible { get; private set; }
@@ -26,7 +28,12 @@ public class AIDetector : MonoBehaviour
     private void Update()
     {
         if (Target != null)
+        {
             TargetVisible = CheckTargetVisible();
+            eai = parent.GetComponentInParent<EnemyAI>();
+            eai.Rotate(TargetVisible);
+
+        }
     }
 
     private bool CheckTargetVisible()
