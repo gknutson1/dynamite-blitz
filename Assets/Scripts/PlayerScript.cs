@@ -75,4 +75,23 @@ public class PlayerScript : MonoBehaviour {
         if (weapon == null) return;
         weapon.firing = context.ReadValue<float>() != 0;
     }
+
+    private void OnMove(InputValue inputVal)
+    {
+        movement = inputVal.Get<Vector2>();
+    }
+
+    // Update is called once per frame
+    //void Update()
+    //{
+    //    float sideToSide = Input.GetAxis("Horizontal");
+    //    float upDown = Input.GetAxis("Vertical");
+
+    //    Vector3 moveVector = new Vector3(sideToSide, upDown, 0);
+    //    moveVector = moveVector.normalized * moveSpeed * Time.deltaTime;
+
+    //    player.transform.position += moveVector;
+    //player.MovePosition(player.transform.position + moveVector);
+    //}
+
 }

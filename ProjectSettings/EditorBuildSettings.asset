@@ -27,5 +27,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Mission-3.unity
     guid: 694674b7b515d5e42afb0018ce3cccdf
   m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 79c71b10cd6d5e8459aa2e27620990a7, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
