@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Backgroundless-bananaJoe_0: 1206767273996650207
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

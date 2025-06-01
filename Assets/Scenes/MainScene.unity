@@ -601,9 +601,9 @@ MonoBehaviour:
   accLosePerRound: 0.2
   accGainPerSecond: 1
   accMaxSpread: 3
-  bulletSpeed: 10
-  bulletDamage: 1
-  bulletSprite: {fileID: 0}
+  held: 0
+  gunOffset: {x: 0, y: 0}
+  bulletOffset: {x: 0, y: 0}
   bullet: {fileID: 6337319270428948977, guid: 161ad834b766d884f8786bbe7a138ac8, type: 3}
 --- !u!4 &1319080576
 Transform:
@@ -866,7 +866,7 @@ GameObject:
   - component: {fileID: 1689965813}
   - component: {fileID: 1689965814}
   - component: {fileID: 1689965815}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Controller
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1029,6 +1029,18 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f1c84f87-367e-4816-bcbb-ccacedfb65ae
+    m_ActionName: 'Player/Blow[/Keyboard/b]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3a787e58-0b27-4e60-a14c-45bb925f2869
+    m_ActionName: 'Player/BackToStart[/Keyboard/y]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 80f6c102-3f79-45c6-9825-6f9a0b78adad
+    m_ActionName: 'Player/Quit[/Keyboard/n]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

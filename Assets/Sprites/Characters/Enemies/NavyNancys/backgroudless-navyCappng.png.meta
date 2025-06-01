@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      backgroudless-navyCappng_0: 3869631839497437854
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

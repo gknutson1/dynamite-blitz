@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Backgroundless-bananaBeret_0: -6355050184259127779
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
