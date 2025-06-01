@@ -30,7 +30,7 @@ public class PlayerScript : MonoBehaviour {
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
-        GameObject.Find
+        //GameObject.Find
         
         _camera = Camera.main;
         _player = gameObject.transform.Find("Player").gameObject;
