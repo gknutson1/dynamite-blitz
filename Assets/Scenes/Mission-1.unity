@@ -899,6 +899,14 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1639316739
       objectReference: {fileID: 0}
+    - target: {fileID: 9182963611567585275, guid: e7f35bb0249b283e5b828c1a25e7d906, type: 3}
+      propertyPath: gunOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182963611567585275, guid: e7f35bb0249b283e5b828c1a25e7d906, type: 3}
+      propertyPath: gunOffset.y
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

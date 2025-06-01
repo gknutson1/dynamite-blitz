@@ -43,8 +43,9 @@ public class Weapon : MonoBehaviour {
     }
 
     public void Attach(GameObject obj) {
-        gameObject.transform.SetParent(obj.transform); 
+        transform.SetParent(obj.transform); 
         transform.localPosition = gunOffset;
+        transform.localRotation = Quaternion.Euler(Vector3.zero);
     }
     
     void Update() {
@@ -70,9 +71,9 @@ public class Weapon : MonoBehaviour {
             roundsRemaining--; // Remove round from gun
             reloading = roundsRemaining == 0; // If gun is empty, automatically begin reloading
             
-            GameObject bulletClone = Instantiate(bullet, transform); // Fire bullet
-            bulletClone.transform.localPosition += bullet.transform.right * bulletOffset.x;
-            bulletClone.transform.localPosition += bullet.transform.up * bulletOffset.y;
+            GameObject bulletClone = Instantiate(bullet, transform.position, transform.rotation); // Fire bullet
+            bulletClone.transform.localPosition += bulletClone.transform.right * bulletOffset.x;
+            bulletClone.transform.localPosition += bulletClone.transform.up * bulletOffset.y;
             
             
             // Throw bullet off angle based off of current accuracy
@@ -80,8 +81,8 @@ public class Weapon : MonoBehaviour {
             angles.z += Random.Range(-_accCur, _accCur);
             bulletClone.transform.rotation = Quaternion.Euler(angles);
             
-            // Rehome bullet to root so it down't get messed with by parent movement/rotation
-            bulletClone.transform.parent = transform.root;
+            // // Rehome bullet to root so it down't get messed with by parent movement/rotation
+            // bulletClone.transform.parent = transform.root;
             
             // Decrease accuracy
             Debug.Log(_accCur + accLosePerRound);

@@ -55,11 +55,11 @@ public class PlayerScript : MonoBehaviour {
         _camera.transform.position = temp;
     }
 
-    public void OnCollisionEnter2D(Collision2D other) {
+    public void OnTriggerEnter2D(Collider2D other) {
         Debug.Log(other.gameObject.tag);
         if (other.gameObject.CompareTag("gun_pickup")) {
             Debug.Log(other.gameObject.name);
-            if (weapon != null) weapon.GetComponent<PlayerWeapon>().Attach(gameObject);
+            if (weapon != null) weapon.GetComponent<PlayerWeapon>().Attach(_player);
 
             weapon = other.gameObject.GetComponent<PlayerWeapon>();
         };
