@@ -10,6 +10,7 @@ TagManager:
   - root
   - healthbar
   - bullet
+  - Enemy
   layers:
   - Default
   - TransparentFX
