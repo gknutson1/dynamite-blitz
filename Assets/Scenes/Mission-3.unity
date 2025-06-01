@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 557349927340431778, guid: 1c201355dcad4e74eb00796a23729320, type: 3}
+    - target: {fileID: 3017955159914117605, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: viewRadius
+      value: 7.2
+      objectReference: {fileID: 0}
     - target: {fileID: 4709637402615580726, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: m_Name
       value: Enemy (4)
@@ -335,7 +339,11 @@ PrefabInstance:
     - target: {fileID: 1336448401860572386, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 557349927340431778, guid: 1c201355dcad4e74eb00796a23729320, type: 3}
+      objectReference: {fileID: 785109003409390835, guid: 6fb98a59743e0114c829be52d8ac1a46, type: 3}
+    - target: {fileID: 3017955159914117605, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: viewRadius
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 4709637402615580726, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: m_Name
       value: Enemy (2)
@@ -454,6 +462,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 557349927340431778, guid: 1c201355dcad4e74eb00796a23729320, type: 3}
+    - target: {fileID: 3017955159914117605, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: viewRadius
+      value: 6.9
+      objectReference: {fileID: 0}
     - target: {fileID: 4709637402615580726, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: m_Name
       value: Enemy (8)
@@ -572,6 +584,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 557349927340431778, guid: 1c201355dcad4e74eb00796a23729320, type: 3}
+    - target: {fileID: 3017955159914117605, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: viewRadius
+      value: 7.7
+      objectReference: {fileID: 0}
     - target: {fileID: 4709637402615580726, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: m_Name
       value: Enemy (6)
@@ -632,7 +648,11 @@ PrefabInstance:
     - target: {fileID: 1336448401860572386, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 557349927340431778, guid: 1c201355dcad4e74eb00796a23729320, type: 3}
+      objectReference: {fileID: -2537959197213951874, guid: 481d621fdbef6c54ca52c47ad877598e, type: 3}
+    - target: {fileID: 3017955159914117605, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: viewRadius
+      value: 6.4
+      objectReference: {fileID: 0}
     - target: {fileID: 4709637402615580726, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: m_Name
       value: Enemy (3)
@@ -979,6 +999,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 557349927340431778, guid: 1c201355dcad4e74eb00796a23729320, type: 3}
+    - target: {fileID: 3017955159914117605, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: viewRadius
+      value: 7.7
+      objectReference: {fileID: 0}
     - target: {fileID: 4709637402615580726, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: m_Name
       value: Enemy (5)
@@ -1274,7 +1298,11 @@ PrefabInstance:
     - target: {fileID: 1336448401860572386, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 557349927340431778, guid: 1c201355dcad4e74eb00796a23729320, type: 3}
+      objectReference: {fileID: -5573748399781543818, guid: df62f7b9936998a4989005151e94b5ec, type: 3}
+    - target: {fileID: 3017955159914117605, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: viewRadius
+      value: 7.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4709637402615580726, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -37040,7 +37068,11 @@ PrefabInstance:
     - target: {fileID: 1336448401860572386, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 557349927340431778, guid: 1c201355dcad4e74eb00796a23729320, type: 3}
+      objectReference: {fileID: 785109003409390835, guid: 6fb98a59743e0114c829be52d8ac1a46, type: 3}
+    - target: {fileID: 3017955159914117605, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: viewRadius
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 4709637402615580726, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: m_Name
       value: Enemy (7)
@@ -37101,7 +37133,11 @@ PrefabInstance:
     - target: {fileID: 1336448401860572386, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 557349927340431778, guid: 1c201355dcad4e74eb00796a23729320, type: 3}
+      objectReference: {fileID: -2537959197213951874, guid: 481d621fdbef6c54ca52c47ad877598e, type: 3}
+    - target: {fileID: 3017955159914117605, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: viewRadius
+      value: 7.1
+      objectReference: {fileID: 0}
     - target: {fileID: 4709637402615580726, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: m_Name
       value: Enemy (1)
