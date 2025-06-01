@@ -18,10 +18,20 @@ public class PlayerScript : MonoBehaviour {
     private Vector2 _direction = Vector2.zero;
 
     private GameObject _staticContainer;
+    
+    // UI objects
+    private TMPro.TMP_Text _uiTimer;
+    private TMPro.TMP_Text _uiGunName;
+    private TMPro.TMP_Text _uiCurrentAmmo;
+    private TMPro.TMP_Text _uiMaxAmmo;
+
+    private float _timer = 0f;
 
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
+        GameObject.Find
+        
         _camera = Camera.main;
         _player = gameObject.transform.Find("Player").gameObject;
         
@@ -64,7 +74,8 @@ public class PlayerScript : MonoBehaviour {
 
     private float _lastPickup = 0f;
     private float _pickupDelay = 3f;
-     private GameObject _lastGun;
+     
+    private GameObject _lastGun;
 
     public void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.CompareTag("gun_pickup")) {
