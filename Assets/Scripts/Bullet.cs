@@ -27,4 +27,8 @@ public class Bullet : Damager {
         transform.position += transform.up * (speed * Time.deltaTime);
         _distanceMoved += (speed * Time.deltaTime);
     }
+
+    public void OnCollisionEnter2D(Collision2D other) {
+        Destroy(gameObject);
+    }
 }

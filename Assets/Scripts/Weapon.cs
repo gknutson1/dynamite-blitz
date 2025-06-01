@@ -76,6 +76,7 @@ public class Weapon : MonoBehaviour {
             GameObject bulletClone = Instantiate(bullet, transform.position, transform.rotation); // Fire bullet
             bulletClone.transform.localPosition += bulletClone.transform.right * bulletOffset.x;
             bulletClone.transform.localPosition += bulletClone.transform.up * bulletOffset.y;
+            bulletClone.GetComponent<Bullet>().damage = damage;
             
             
             // Throw bullet off angle based off of current accuracy
