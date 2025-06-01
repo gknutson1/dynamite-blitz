@@ -10,6 +10,7 @@ public class PlayerScript : MonoBehaviour {
     private Camera _camera;
 
     private bool _moving = false;
+    private Vector2 movement;
     
     // We need a seperate player object to hold our rotation else the camera will spin with us
     private GameObject _player;

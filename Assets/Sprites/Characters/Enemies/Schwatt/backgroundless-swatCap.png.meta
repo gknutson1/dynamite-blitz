@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      backgroundless-swatCap_0: 785109003409390835
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

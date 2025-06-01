@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      backgroundless-GreenBeret_0: -665741399377965790
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

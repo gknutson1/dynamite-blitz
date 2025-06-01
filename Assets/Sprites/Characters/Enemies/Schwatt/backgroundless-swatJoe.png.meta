@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      backgroundless-swatJoe_0: 557349927340431778
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      backgroundless-navyBrute_0: 7011941825417838219
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

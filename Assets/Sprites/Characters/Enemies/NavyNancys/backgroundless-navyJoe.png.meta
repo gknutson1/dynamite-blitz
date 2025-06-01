@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      backgroundless-navyJoe_0: -2018738157578771064
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

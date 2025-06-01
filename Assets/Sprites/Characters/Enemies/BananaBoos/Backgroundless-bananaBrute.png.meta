@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Backgroundless-bananaBrute_0: 6733504772492077925
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
