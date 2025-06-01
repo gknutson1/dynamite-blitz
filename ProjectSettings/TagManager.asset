@@ -17,8 +17,8 @@ TagManager:
   - ObstaclesMovement
   - Player
   - Enemy
-  - 
-  - 
+  - Background
+  - Exit
   - 
   - 
   - 
@@ -40,6 +40,15 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3623529477
+    locked: 0
+  - name: Props
+    uniqueID: 2655650557
+    locked: 0
+  - name: Agent
+    uniqueID: 1363739159
     locked: 0
   m_RenderingLayers:
   - Default
