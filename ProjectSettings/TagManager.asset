@@ -8,6 +8,8 @@ TagManager:
   - gun_pickup
   - Undefined
   - root
+  - healthbar
+  - bullet
   layers:
   - Default
   - TransparentFX
