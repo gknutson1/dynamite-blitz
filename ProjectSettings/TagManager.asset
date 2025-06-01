@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - damaging
+  - gun_pickup
+  - Undefined
+  - root
   layers:
   - Default
   - TransparentFX

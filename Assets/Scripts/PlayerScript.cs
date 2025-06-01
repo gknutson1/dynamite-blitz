@@ -17,6 +17,8 @@ public class PlayerScript : MonoBehaviour {
     
     private Vector2 _direction = Vector2.zero;
 
+    private GameObject _staticContainer;
+
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
@@ -24,12 +26,17 @@ public class PlayerScript : MonoBehaviour {
         _player = gameObject.transform.Find("Player").gameObject;
         
         Sprite sprite = _player.GetComponent<SpriteRenderer>().sprite;
+        
+        gameObject.GetComponent<CircleCollider2D>().radius = 
+            Mathf.Min(sprite.texture.width, sprite.texture.height) / sprite.pixelsPerUnit / 4;
 
         if (weapon != null) {
             weapon.transform.parent = _player.transform;
             weapon.transform.position = Vector3.zero;
             weapon.transform.rotation = Quaternion.Euler(Vector3.zero);
         }
+
+        _staticContainer = GameObject.FindGameObjectWithTag("root");
     }
 
     // Update is called once per frame
@@ -55,13 +62,35 @@ public class PlayerScript : MonoBehaviour {
         _camera.transform.position = temp;
     }
 
-    public void OnTriggerEnter2D(Collider2D other) {
-        Debug.Log(other.gameObject.tag);
-        if (other.gameObject.CompareTag("gun_pickup")) {
-            Debug.Log(other.gameObject.name);
-            if (weapon != null) weapon.GetComponent<PlayerWeapon>().Attach(_player);
+    private float _lastPickup = 0f;
+    private float _pickupDelay = 3f;
+     private GameObject _lastGun;
 
+    public void OnTriggerEnter2D(Collider2D other) {
+        if (other.gameObject.CompareTag("gun_pickup")) {
+            // If the pickup delay has not expired, check if gun is same as last gun and return if it is
+            if (Time.time < _lastPickup + _pickupDelay && _lastGun == other.gameObject) return;
+            
+            // Otherwise, reset pickup timer, update last gun, and continue
+            _lastPickup = Time.time;
+            _lastGun = (weapon != null) ? weapon.gameObject : null;
+
+            bool isFiring;
+            
+            if (weapon != null) {
+                weapon.transform.SetParent(_staticContainer.transform, true);
+                _lastGun = weapon.gameObject;
+                isFiring = weapon.firing;
+                weapon.firing = false;
+                weapon.GetComponent<PlayerWeapon>().enabled = false;
+                weapon = null;
+            }
+            else {
+                isFiring = false;
+            }
             weapon = other.gameObject.GetComponent<PlayerWeapon>();
+            weapon.Attach(_player);
+            weapon.firing = isFiring;
         };
     }
 

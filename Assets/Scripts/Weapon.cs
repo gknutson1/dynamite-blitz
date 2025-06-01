@@ -46,6 +46,8 @@ public class Weapon : MonoBehaviour {
         transform.SetParent(obj.transform); 
         transform.localPosition = gunOffset;
         transform.localRotation = Quaternion.Euler(Vector3.zero);
+        
+        gameObject.GetComponent<PlayerWeapon>().enabled = true;
     }
     
     void Update() {
@@ -85,7 +87,6 @@ public class Weapon : MonoBehaviour {
             // bulletClone.transform.parent = transform.root;
             
             // Decrease accuracy
-            Debug.Log(_accCur + accLosePerRound);
             _accCur = Mathf.Min(accMaxSpread, _accCur + accLosePerRound);
         }
     }
