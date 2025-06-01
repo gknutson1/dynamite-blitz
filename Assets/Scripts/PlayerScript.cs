@@ -24,9 +24,6 @@ public class PlayerScript : MonoBehaviour {
         _player = gameObject.transform.Find("Player").gameObject;
         
         Sprite sprite = _player.GetComponent<SpriteRenderer>().sprite;
-        
-        _player.GetComponent<BoxCollider2D>().size = 
-            new Vector2(sprite.texture.width, sprite.texture.height) / sprite.pixelsPerUnit;
 
         if (weapon != null) {
             weapon.transform.parent = _player.transform;
@@ -60,7 +57,8 @@ public class PlayerScript : MonoBehaviour {
 
     public void OnCollisionEnter2D(Collision2D other) {
         Debug.Log(other.gameObject.tag);
-        if (other.gameObject.CompareTag("WeaponPickup")) {
+        if (other.gameObject.CompareTag("gun_pickup")) {
+            Debug.Log(other.gameObject.name);
             if (weapon != null) weapon.GetComponent<PlayerWeapon>().Attach(gameObject);
 
             weapon = other.gameObject.GetComponent<PlayerWeapon>();

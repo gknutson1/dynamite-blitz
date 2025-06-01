@@ -20,6 +20,8 @@ public class Weapon : MonoBehaviour {
     private int damage = 0;
     private float _accCur = 0f;
 
+    public string name = "Weapon";
+
     public bool held = false;
 
     public Vector2 gunOffset = Vector3.zero;
