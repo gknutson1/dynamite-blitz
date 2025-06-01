@@ -24,13 +24,20 @@ public class PlayerScript : MonoBehaviour {
     private TMPro.TMP_Text _uiGunName;
     private TMPro.TMP_Text _uiCurrentAmmo;
     private TMPro.TMP_Text _uiMaxAmmo;
+    private GameObject _uiAmmoBox;
 
-    private float _timer = 0f;
+    private float _score_time = 0f;
 
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
-        //GameObject.Find
+        GameObject uiBox = GameObject.FindGameObjectWithTag("ui");
+        
+        _uiTimer = uiBox.transform.Find("time").GetComponent<TMPro.TMP_Text>();
+        _uiGunName = uiBox.transform.Find("name").GetComponent<TMPro.TMP_Text>();
+        _uiCurrentAmmo = uiBox.transform.Find("remain").GetComponent<TMPro.TMP_Text>();
+        _uiMaxAmmo = uiBox.transform.Find("max").GetComponent<TMPro.TMP_Text>();
+        _uiAmmoBox = uiBox.transform.Find("ammo").gameObject;
         
         _camera = Camera.main;
         _player = gameObject.transform.Find("Player").gameObject;
