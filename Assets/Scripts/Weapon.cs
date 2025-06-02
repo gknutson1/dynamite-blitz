@@ -51,6 +51,8 @@ public class Weapon : MonoBehaviour {
     }
 
     protected virtual void UpdatePlayerUI() {}
+    
+    protected virtual void RegisterFire() {}
 
     void Update() {
         // If we aren't ready to shoot, increase shot delay timer
@@ -76,6 +78,7 @@ public class Weapon : MonoBehaviour {
             roundsRemaining--; // Remove round from gun
             reloading = roundsRemaining == 0; // If gun is empty, automatically begin reloading
             UpdatePlayerUI();
+            RegisterFire();
             
             GameObject bulletClone = Instantiate(bullet, transform.position, transform.rotation); // Fire bullet
             bulletClone.transform.localPosition += bulletClone.transform.right * bulletOffset.x;

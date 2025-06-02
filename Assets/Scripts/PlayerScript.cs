@@ -2,6 +2,7 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 public class PlayerScript : MonoBehaviour {
     public PlayerWeapon weapon;
@@ -88,6 +89,9 @@ public class PlayerScript : MonoBehaviour {
      
     private GameObject _lastGun;
 
+    public int shotsFired = 0;
+    private int _enemiesKilled = 0;
+
     public void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.CompareTag("gun_pickup")) {
             // If the pickup delay has not expired, check if gun is same as last gun and return if it is
@@ -109,12 +113,15 @@ public class PlayerScript : MonoBehaviour {
             }
             else {
                 isFiring = false;
+                _uiAmmoBox.SetActive(true);
             }
             weapon = other.gameObject.GetComponent<PlayerWeapon>();
             weapon.Attach(_player);
             weapon.firing = isFiring;
             weapon.uiAmmoCount = _uiCurrentAmmo;
+            weapon.player = gameObject.GetComponent<PlayerScript>(); 
             _uiMaxAmmo.SetText(weapon.roundsMax.ToString());
+            _uiCurrentAmmo.SetText(weapon.roundsRemaining.ToString());
             _uiGunName.SetText(weapon.name);
         };
     }
