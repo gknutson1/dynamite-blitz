@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -2818041628479185415}
   - component: {fileID: -3614955845528229324}
   m_Layer: 6
-  m_Name: smg_bullet
+  m_Name: enemy_smg_bullet
   m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103,8 +103,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 3
-  maxDistance: 30
+  speed: 1.5
+  maxDistance: 100
   sprite: {fileID: 8799946911441488064, guid: 9320d2752818ec60b850710128a07422, type: 3}
 --- !u!61 &-2818041628479185415
 BoxCollider2D:

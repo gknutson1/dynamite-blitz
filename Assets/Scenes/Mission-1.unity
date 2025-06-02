@@ -134,7 +134,7 @@ PrefabInstance:
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 6337319270428948977, guid: 55d417f8bebd1164eb4a8b31767789bb, type: 3}
+      objectReference: {fileID: 6337319270428948977, guid: 27a6a697808e01e4a813ce5f9a365f37, type: 3}
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: roundsMax
       value: 25
@@ -257,7 +257,7 @@ PrefabInstance:
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 6337319270428948977, guid: 652d56374a06e6746b22b1bd4c6ebe14, type: 3}
+      objectReference: {fileID: 6337319270428948977, guid: 81678fba479d5a043987e5d49e8de5a1, type: 3}
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: accLosePerRound
       value: 0.75
@@ -330,7 +330,7 @@ PrefabInstance:
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 6337319270428948977, guid: 55d417f8bebd1164eb4a8b31767789bb, type: 3}
+      objectReference: {fileID: 6337319270428948977, guid: 27a6a697808e01e4a813ce5f9a365f37, type: 3}
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: roundsMax
       value: 25
@@ -415,7 +415,7 @@ PrefabInstance:
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 6337319270428948977, guid: 55d417f8bebd1164eb4a8b31767789bb, type: 3}
+      objectReference: {fileID: 6337319270428948977, guid: 27a6a697808e01e4a813ce5f9a365f37, type: 3}
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: roundsMax
       value: 25
@@ -585,7 +585,7 @@ PrefabInstance:
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 6337319270428948977, guid: 55d417f8bebd1164eb4a8b31767789bb, type: 3}
+      objectReference: {fileID: 6337319270428948977, guid: 27a6a697808e01e4a813ce5f9a365f37, type: 3}
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: roundsMax
       value: 25
@@ -1657,7 +1657,7 @@ PrefabInstance:
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 6337319270428948977, guid: 55d417f8bebd1164eb4a8b31767789bb, type: 3}
+      objectReference: {fileID: 6337319270428948977, guid: 81678fba479d5a043987e5d49e8de5a1, type: 3}
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: accLosePerRound
       value: 0.5
@@ -1866,7 +1866,7 @@ PrefabInstance:
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 6337319270428948977, guid: 652d56374a06e6746b22b1bd4c6ebe14, type: 3}
+      objectReference: {fileID: 6337319270428948977, guid: 81678fba479d5a043987e5d49e8de5a1, type: 3}
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: accLosePerRound
       value: 0.75
@@ -1939,7 +1939,7 @@ PrefabInstance:
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 6337319270428948977, guid: 55d417f8bebd1164eb4a8b31767789bb, type: 3}
+      objectReference: {fileID: 6337319270428948977, guid: 27a6a697808e01e4a813ce5f9a365f37, type: 3}
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: roundsMax
       value: 25
@@ -2024,7 +2024,7 @@ PrefabInstance:
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 6337319270428948977, guid: 55d417f8bebd1164eb4a8b31767789bb, type: 3}
+      objectReference: {fileID: 6337319270428948977, guid: 27a6a697808e01e4a813ce5f9a365f37, type: 3}
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: roundsMax
       value: 25
@@ -2109,7 +2109,7 @@ PrefabInstance:
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 6337319270428948977, guid: 55d417f8bebd1164eb4a8b31767789bb, type: 3}
+      objectReference: {fileID: 6337319270428948977, guid: 27a6a697808e01e4a813ce5f9a365f37, type: 3}
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: roundsMax
       value: 25
@@ -2534,7 +2534,7 @@ PrefabInstance:
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 6337319270428948977, guid: 55d417f8bebd1164eb4a8b31767789bb, type: 3}
+      objectReference: {fileID: 6337319270428948977, guid: 27a6a697808e01e4a813ce5f9a365f37, type: 3}
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: roundsMax
       value: 25
@@ -2619,7 +2619,7 @@ PrefabInstance:
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 6337319270428948977, guid: 55d417f8bebd1164eb4a8b31767789bb, type: 3}
+      objectReference: {fileID: 6337319270428948977, guid: 27a6a697808e01e4a813ce5f9a365f37, type: 3}
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: roundsMax
       value: 25
@@ -2807,7 +2807,7 @@ PrefabInstance:
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 6337319270428948977, guid: 55d417f8bebd1164eb4a8b31767789bb, type: 3}
+      objectReference: {fileID: 6337319270428948977, guid: 27a6a697808e01e4a813ce5f9a365f37, type: 3}
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: roundsMax
       value: 25
@@ -2884,7 +2884,7 @@ PrefabInstance:
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 6337319270428948977, guid: 55d417f8bebd1164eb4a8b31767789bb, type: 3}
+      objectReference: {fileID: 6337319270428948977, guid: 27a6a697808e01e4a813ce5f9a365f37, type: 3}
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: roundsMax
       value: 25
@@ -3026,7 +3026,7 @@ PrefabInstance:
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 6337319270428948977, guid: 55d417f8bebd1164eb4a8b31767789bb, type: 3}
+      objectReference: {fileID: 6337319270428948977, guid: 27a6a697808e01e4a813ce5f9a365f37, type: 3}
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: roundsMax
       value: 25
@@ -3107,7 +3107,7 @@ PrefabInstance:
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 6337319270428948977, guid: 55d417f8bebd1164eb4a8b31767789bb, type: 3}
+      objectReference: {fileID: 6337319270428948977, guid: 27a6a697808e01e4a813ce5f9a365f37, type: 3}
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: roundsMax
       value: 25
@@ -3192,7 +3192,7 @@ PrefabInstance:
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 6337319270428948977, guid: 55d417f8bebd1164eb4a8b31767789bb, type: 3}
+      objectReference: {fileID: 6337319270428948977, guid: 27a6a697808e01e4a813ce5f9a365f37, type: 3}
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: roundsMax
       value: 25
@@ -3366,7 +3366,7 @@ PrefabInstance:
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 6337319270428948977, guid: 652d56374a06e6746b22b1bd4c6ebe14, type: 3}
+      objectReference: {fileID: 6337319270428948977, guid: 81678fba479d5a043987e5d49e8de5a1, type: 3}
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: accLosePerRound
       value: 0.75
@@ -3496,7 +3496,7 @@ PrefabInstance:
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 6337319270428948977, guid: 55d417f8bebd1164eb4a8b31767789bb, type: 3}
+      objectReference: {fileID: 6337319270428948977, guid: 27a6a697808e01e4a813ce5f9a365f37, type: 3}
     - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: roundsMax
       value: 25
