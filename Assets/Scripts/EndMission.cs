@@ -9,6 +9,9 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // game manager know that the current game has ended
     void OnTriggerEnter(Collider other)
     {
-        gameManager.FinishedGame();
+        if (other.gameObject.CompareTag("Player"))
+        {
+            gameManager.FinishedGame();
+        }
     }
 }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Bullet : Damager {
     
@@ -32,6 +33,10 @@ public class Bullet : Damager {
         if (other.gameObject.CompareTag("Enemy")) {
             Destroy(other.gameObject);
             GameObject.Find("Controller").GetComponent<PlayerScript>().enemiesKilled++;
+        }
+        if (other.gameObject.CompareTag("Player"))
+        {
+            SceneManager.LoadScene("Game-Over");
         }
         Destroy(gameObject);
     }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -37,10 +38,10 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         // Add time to the clock if the game is running
-        if (isRunning)
+        /*if (isRunning)
         {
             elapsedTime = elapsedTime + Time.deltaTime;
-        }
+        }*/
     }
 
 
@@ -55,7 +56,6 @@ public class GameManager : MonoBehaviour
     // Runs when the player enters the finish zone
     public void FinishedGame()
     {
-        isRunning = false;
-        isFinished = true;
+        SceneManager.LoadScene("Score");
     }
 }

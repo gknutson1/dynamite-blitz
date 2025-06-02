@@ -131,11 +131,11 @@ public class UIHandler : MonoBehaviour
 
     public void SelectLvl(string lvl)
     {
-        if (string.IsNullOrEmpty(this.alias)) {
+        /*if (string.IsNullOrEmpty(this.alias)) {
             Debug.Log("\nalias can NOT be empty!!\n");
-        }
-        else 
-        { 
+        }*/
+        //else 
+       // { 
             if (lvl == "1")
             {
                 SceneManager.LoadScene("Mission-1");
@@ -152,7 +152,7 @@ public class UIHandler : MonoBehaviour
             {
                 Debug.LogError("Invalid lvl selected\n");
             }
-        }
+       // }
     }
 
 }
