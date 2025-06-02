@@ -131,6 +131,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 557349927340431778, guid: 1c201355dcad4e74eb00796a23729320, type: 3}
+    - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: roundsMax
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: roundDelay
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: roundsRemaining
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 3017955159914117605, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: viewRadius
       value: 7.2
@@ -340,6 +352,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 785109003409390835, guid: 6fb98a59743e0114c829be52d8ac1a46, type: 3}
+    - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: roundsMax
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: roundDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: accMaxSpread
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: roundsRemaining
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3017955159914117605, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: viewRadius
       value: 15
@@ -462,6 +490,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 557349927340431778, guid: 1c201355dcad4e74eb00796a23729320, type: 3}
+    - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: roundsMax
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: roundDelay
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: roundsRemaining
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 3017955159914117605, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: viewRadius
       value: 6.9
@@ -584,6 +624,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 557349927340431778, guid: 1c201355dcad4e74eb00796a23729320, type: 3}
+    - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: roundsMax
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: roundDelay
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: roundsRemaining
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 3017955159914117605, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: viewRadius
       value: 7.7
@@ -999,6 +1051,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 557349927340431778, guid: 1c201355dcad4e74eb00796a23729320, type: 3}
+    - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: roundsMax
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: roundDelay
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: roundsRemaining
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 3017955159914117605, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: viewRadius
       value: 7.7
@@ -1299,6 +1363,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -5573748399781543818, guid: df62f7b9936998a4989005151e94b5ec, type: 3}
+    - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: roundsMax
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: roundsRemaining
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 3017955159914117605, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: viewRadius
       value: 7.5
@@ -37069,6 +37141,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 785109003409390835, guid: 6fb98a59743e0114c829be52d8ac1a46, type: 3}
+    - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: roundsMax
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: roundDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: accMaxSpread
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454417335280758130, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
+      propertyPath: roundsRemaining
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3017955159914117605, guid: 4c2f8d2f74fb5bb409ae741107870a52, type: 3}
       propertyPath: viewRadius
       value: 15
