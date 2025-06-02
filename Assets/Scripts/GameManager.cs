@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     {
         //Tell Unity to allow character controllers to have their position set directly. This will enable our respawn to work
         Physics.autoSyncTransforms = true;
-
+        StartGame();
     }
 
 
