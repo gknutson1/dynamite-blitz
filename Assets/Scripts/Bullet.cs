@@ -31,6 +31,7 @@ public class Bullet : Damager {
     public void OnCollisionEnter2D(Collision2D other) {
         if (other.gameObject.CompareTag("Enemy")) {
             Destroy(other.gameObject);
+            GameObject.Find("Controller").GetComponent<PlayerScript>().enemiesKilled++;
         }
         Destroy(gameObject);
     }

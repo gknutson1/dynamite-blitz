@@ -90,7 +90,7 @@ public class PlayerScript : MonoBehaviour {
     private GameObject _lastGun;
 
     public int shotsFired = 0;
-    private int _enemiesKilled = 0;
+    public int enemiesKilled = 0;
 
     public void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.CompareTag("gun_pickup")) {

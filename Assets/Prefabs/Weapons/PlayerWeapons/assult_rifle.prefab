@@ -59,8 +59,9 @@ MonoBehaviour:
   held: 0
   gunOffset: {x: 0, y: 0}
   bulletOffset: {x: 0, y: 0}
-  bullet: {fileID: 6337319270428948977, guid: a87306a46bd5179d08f9592dc638ff76, type: 3}
+  bullet: {fileID: 6337319270428948977, guid: 27a6a697808e01e4a813ce5f9a365f37, type: 3}
   uiAmmoCount: {fileID: 0}
+  player: {fileID: 0}
 --- !u!212 &5651863649510069735
 SpriteRenderer:
   m_ObjectHideFlags: 0
