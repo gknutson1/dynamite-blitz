@@ -39,7 +39,7 @@ public class Weapon : MonoBehaviour {
             renderer.texture.width, 
             renderer.texture.height) / renderer.pixelsPerUnit;
 
-        if (held == false) gameObject.GetComponent<PlayerWeapon>().enabled = false;
+        if (held == false) gameObject.GetComponent<Weapon>().enabled = false;
     }
 
     public void Attach(GameObject obj) {
@@ -47,9 +47,11 @@ public class Weapon : MonoBehaviour {
         transform.localPosition = gunOffset;
         transform.localRotation = Quaternion.Euler(Vector3.zero);
         
-        gameObject.GetComponent<PlayerWeapon>().enabled = true;
+        gameObject.GetComponent<Weapon>().enabled = true;
     }
-    
+
+    protected virtual void UpdatePlayerUI() {}
+
     void Update() {
         // If we aren't ready to shoot, increase shot delay timer
         if (_sinceLastShot < roundDelay) _sinceLastShot += Time.deltaTime;
@@ -64,6 +66,7 @@ public class Weapon : MonoBehaviour {
                 reloading = false;               // Stop reloading
                 roundsRemaining = roundsMax;     // Gun now full of bullets
                 _reloadProgress = 0f;            // Restart timer
+                UpdatePlayerUI();                // Update UI if needed
             }
         }
         
@@ -72,6 +75,7 @@ public class Weapon : MonoBehaviour {
             _sinceLastShot = 0; // Reset shot timer
             roundsRemaining--; // Remove round from gun
             reloading = roundsRemaining == 0; // If gun is empty, automatically begin reloading
+            UpdatePlayerUI();
             
             GameObject bulletClone = Instantiate(bullet, transform.position, transform.rotation); // Fire bullet
             bulletClone.transform.localPosition += bulletClone.transform.right * bulletOffset.x;

@@ -34,7 +34,7 @@ public class AIDetector : MonoBehaviour
             TargetVisible = CheckTargetVisible();
             eai = parent.GetComponentInParent<EnemyAI>();
             eai.Rotate(TargetVisible);
-            wn = gun.GetComponent<PlayerWeapon>();
+            wn = gun.GetComponent<EnemyWeapon>();
             wn.firing = TargetVisible;
 
         }

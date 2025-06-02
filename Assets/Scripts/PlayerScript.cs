@@ -34,10 +34,10 @@ public class PlayerScript : MonoBehaviour {
         GameObject uiBox = GameObject.FindGameObjectWithTag("ui");
         
         _uiTimer = uiBox.transform.Find("time").GetComponent<TMPro.TMP_Text>();
-        _uiGunName = uiBox.transform.Find("name").GetComponent<TMPro.TMP_Text>();
-        _uiCurrentAmmo = uiBox.transform.Find("remain").GetComponent<TMPro.TMP_Text>();
-        _uiMaxAmmo = uiBox.transform.Find("max").GetComponent<TMPro.TMP_Text>();
-        _uiAmmoBox = uiBox.transform.Find("ammo").gameObject;
+        _uiAmmoBox = uiBox.transform.Find("weapon_box/ammo").gameObject;
+        _uiGunName = uiBox.transform.Find("weapon_box/name").GetComponent<TMPro.TMP_Text>();
+        _uiCurrentAmmo = _uiAmmoBox.transform.Find("remain").GetComponent<TMPro.TMP_Text>();
+        _uiMaxAmmo = _uiAmmoBox.transform.Find("max").GetComponent<TMPro.TMP_Text>();
         
         _camera = Camera.main;
         _player = gameObject.transform.Find("Player").gameObject;
@@ -58,6 +58,10 @@ public class PlayerScript : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        _score_time += Time.deltaTime;
+        
+        _uiTimer.SetText(TimeSpan.FromSeconds(_score_time).ToString(@"hh\:mm\:ss\.ff"));
+        
         // Rotation
         Vector2 pointer = _camera.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         Vector3 position = transform.position;
@@ -109,6 +113,9 @@ public class PlayerScript : MonoBehaviour {
             weapon = other.gameObject.GetComponent<PlayerWeapon>();
             weapon.Attach(_player);
             weapon.firing = isFiring;
+            weapon.uiAmmoCount = _uiCurrentAmmo;
+            _uiMaxAmmo.SetText(weapon.roundsMax.ToString());
+            _uiGunName.SetText(weapon.name);
         };
     }
 
