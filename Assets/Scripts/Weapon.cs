@@ -28,7 +28,13 @@ public class Weapon : MonoBehaviour {
     public Vector2 bulletOffset = Vector3.zero;
 
     public GameObject bullet;
-    
+
+    public AudioSource reload;
+    public AudioClip reloadSound;
+    public bool playReload = true;
+    public AudioSource fire;
+    public AudioClip fireSound;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
         roundsRemaining = roundsMax;
@@ -62,9 +68,15 @@ public class Weapon : MonoBehaviour {
 
         // If we are reloading
         if (reloading) {
+            if (playReload)
+            {
+                reload.PlayOneShot(reloadSound, 0.25f);
+                playReload = false;
+            }
             _reloadProgress += Time.deltaTime; // Increment reload timer
 
             if (_reloadProgress >= reloadTime) { // Is the reload timer up?
+                playReload = true;
                 reloading = false;               // Stop reloading
                 roundsRemaining = roundsMax;     // Gun now full of bullets
                 _reloadProgress = 0f;            // Restart timer
@@ -84,8 +96,9 @@ public class Weapon : MonoBehaviour {
             bulletClone.transform.localPosition += bulletClone.transform.right * bulletOffset.x;
             bulletClone.transform.localPosition += bulletClone.transform.up * bulletOffset.y;
             bulletClone.GetComponent<Bullet>().damage = damage;
-            
-            
+            fire.PlayOneShot(fireSound, 0.25f);
+
+
             // Throw bullet off angle based off of current accuracy
             Vector3 angles = bulletClone.transform.rotation.eulerAngles;
             angles.z += Random.Range(-_accCur, _accCur);
