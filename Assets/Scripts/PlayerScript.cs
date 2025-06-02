@@ -57,10 +57,12 @@ public class PlayerScript : MonoBehaviour {
 
         _staticContainer = GameObject.FindGameObjectWithTag("root");
         pickup(_player.transform.Find("assult_rifle").gameObject);
+        _player.transform.Find("assult_rifle").transform.localPosition = Vector3.zero;
     }
 
     // Update is called once per frame
     void Update() {
+        if (!weapon) pickup(_player.transform.Find("assult_rifle").gameObject);;
         _score_time += Time.deltaTime;
         
         _uiTimer.SetText(TimeSpan.FromSeconds(_score_time).ToString(@"hh\:mm\:ss\.ff"));
@@ -102,24 +104,22 @@ public class PlayerScript : MonoBehaviour {
         // Otherwise, reset pickup timer, update last gun, and continue
         _lastPickup = Time.time;
         _lastGun = (weapon != null) ? weapon.gameObject : null;
-
-        bool isFiring;
+        
             
-        if (weapon != null) {
-            weapon.transform.SetParent(_staticContainer.transform, true);
-            _lastGun = weapon.gameObject;
-            isFiring = weapon.firing;
-            weapon.firing = false;
-            weapon.GetComponent<PlayerWeapon>().enabled = false;
-            weapon = null;
-        }
-        else {
-            isFiring = false;
-            _uiAmmoBox.SetActive(true);
-        }
+        // if (weapon != null) {
+        //     weapon.transform.SetParent(_staticContainer.transform, true);
+        //     _lastGun = weapon.gameObject;
+        //     isFiring = weapon.firing;
+        //     weapon.firing = false;
+        //     weapon.GetComponent<PlayerWeapon>().enabled = false;
+        //     weapon = null;
+        // }
+        // else {
+        //     isFiring = false;
+        //     _uiAmmoBox.SetActive(true);
+        // }
         weapon = other.gameObject.GetComponent<PlayerWeapon>();
         weapon.Attach(_player);
-        weapon.firing = isFiring;
         weapon.uiAmmoCount = _uiCurrentAmmo;
         weapon.player = gameObject.GetComponent<PlayerScript>(); 
         _uiMaxAmmo.SetText(weapon.roundsMax.ToString());
