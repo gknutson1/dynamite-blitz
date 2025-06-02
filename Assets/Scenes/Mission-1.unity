@@ -3875,6 +3875,10 @@ PrefabInstance:
       value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: ddda5a8165c4b8205adedc82424b8ab3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6186186471714378601, guid: f38f3cc700c209e419f48062afa43929, type: 3}
+    - target: {fileID: 3626916397498700004, guid: ddda5a8165c4b8205adedc82424b8ab3, type: 3}
       propertyPath: m_SortingLayer
       value: 3
       objectReference: {fileID: 0}
@@ -3885,6 +3889,10 @@ PrefabInstance:
     - target: {fileID: 3626916397498700004, guid: ddda5a8165c4b8205adedc82424b8ab3, type: 3}
       propertyPath: m_SortingLayerID
       value: 1363739159
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: ddda5a8165c4b8205adedc82424b8ab3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: ddda5a8165c4b8205adedc82424b8ab3, type: 3}
       propertyPath: m_LocalPosition.x
