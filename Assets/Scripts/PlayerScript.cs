@@ -2,6 +2,7 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
 public class PlayerScript : MonoBehaviour {
@@ -55,6 +56,7 @@ public class PlayerScript : MonoBehaviour {
         }
 
         _staticContainer = GameObject.FindGameObjectWithTag("root");
+        pickup(_player.transform.Find("assult_rifle").gameObject);
     }
 
     // Update is called once per frame
@@ -68,6 +70,7 @@ public class PlayerScript : MonoBehaviour {
         Vector3 position = transform.position;
 
         float rot = Mathf.Atan2(position.x - pointer.x,pointer.y - position.y);
+        _player.transform.localPosition = Vector3.zero;
         _player.transform.rotation = Quaternion.Euler(0f, 0f, rot * Mathf.Rad2Deg);
         
         // Movement
@@ -92,38 +95,50 @@ public class PlayerScript : MonoBehaviour {
     public int shotsFired = 0;
     public int enemiesKilled = 0;
 
-    public void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.CompareTag("gun_pickup")) {
-            // If the pickup delay has not expired, check if gun is same as last gun and return if it is
-            if (Time.time < _lastPickup + _pickupDelay && _lastGun == other.gameObject) return;
+    public void pickup(GameObject other) {
+        // If the pickup delay has not expired, check if gun is same as last gun and return if it is
+        if (Time.time < _lastPickup + _pickupDelay && _lastGun == other.gameObject) return;
             
-            // Otherwise, reset pickup timer, update last gun, and continue
-            _lastPickup = Time.time;
-            _lastGun = (weapon != null) ? weapon.gameObject : null;
+        // Otherwise, reset pickup timer, update last gun, and continue
+        _lastPickup = Time.time;
+        _lastGun = (weapon != null) ? weapon.gameObject : null;
 
-            bool isFiring;
+        bool isFiring;
             
-            if (weapon != null) {
-                weapon.transform.SetParent(_staticContainer.transform, true);
-                _lastGun = weapon.gameObject;
-                isFiring = weapon.firing;
-                weapon.firing = false;
-                weapon.GetComponent<PlayerWeapon>().enabled = false;
-                weapon = null;
-            }
-            else {
-                isFiring = false;
-                _uiAmmoBox.SetActive(true);
-            }
-            weapon = other.gameObject.GetComponent<PlayerWeapon>();
-            weapon.Attach(_player);
-            weapon.firing = isFiring;
-            weapon.uiAmmoCount = _uiCurrentAmmo;
-            weapon.player = gameObject.GetComponent<PlayerScript>(); 
-            _uiMaxAmmo.SetText(weapon.roundsMax.ToString());
-            _uiCurrentAmmo.SetText(weapon.roundsRemaining.ToString());
-            _uiGunName.SetText(weapon.name);
-        };
+        if (weapon != null) {
+            weapon.transform.SetParent(_staticContainer.transform, true);
+            _lastGun = weapon.gameObject;
+            isFiring = weapon.firing;
+            weapon.firing = false;
+            weapon.GetComponent<PlayerWeapon>().enabled = false;
+            weapon = null;
+        }
+        else {
+            isFiring = false;
+            _uiAmmoBox.SetActive(true);
+        }
+        weapon = other.gameObject.GetComponent<PlayerWeapon>();
+        weapon.Attach(_player);
+        weapon.firing = isFiring;
+        weapon.uiAmmoCount = _uiCurrentAmmo;
+        weapon.player = gameObject.GetComponent<PlayerScript>(); 
+        _uiMaxAmmo.SetText(weapon.roundsMax.ToString());
+        _uiCurrentAmmo.SetText(weapon.roundsRemaining.ToString());
+        _uiGunName.SetText(weapon.name);
+    }
+
+    public void OnTriggerEnter2D(Collider2D other) {
+        Debug.Log(other.name);
+        if (other.gameObject.CompareTag("gun_pickup")) {
+            pickup(other.gameObject);
+        }
+        else if (other.gameObject.CompareTag("exit")) {
+            ScoreCaddy caddy = GameObject.FindGameObjectWithTag("caddy").GetComponent<ScoreCaddy>();
+            caddy.kills = enemiesKilled;
+            caddy.shotsFired = shotsFired;
+            caddy.time = _score_time;
+            SceneManager.LoadScene("Scenes/Score");
+        }
     }
 
     public void OnMove(InputAction.CallbackContext context) {

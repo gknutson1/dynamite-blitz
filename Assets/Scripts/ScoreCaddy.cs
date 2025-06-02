@@ -7,6 +7,10 @@ public class ScoreCaddy : MonoBehaviour {
     public int shotsFired;
 
     public int GetScore() {
-        return (int)((kills * 10f * (kills / shotsFired)) - time);
+        return (int)(( kills * 10f * (shotsFired > 0 ? (float) kills / (float) shotsFired : 1)) - time);
+    }
+
+    void Start() {
+        DontDestroyOnLoad(gameObject);
     }
 }

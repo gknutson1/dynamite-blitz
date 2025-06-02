@@ -9,6 +9,6 @@ public class PlayerWeapon : Weapon {
     
     protected override void UpdatePlayerUI() => uiAmmoCount.SetText(roundsRemaining.ToString());
 
-    protected virtual void RegisterFire() => player.shotsFired++;
+    protected override void RegisterFire() => player.shotsFired++;
 }
 

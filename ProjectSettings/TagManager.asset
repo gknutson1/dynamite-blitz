@@ -12,6 +12,8 @@ TagManager:
   - bullet
   - Enemy
   - ui
+  - caddy
+  - exit
   layers:
   - Default
   - TransparentFX

@@ -57,11 +57,11 @@ MonoBehaviour:
   accLosePerRound: 0.3
   accGainPerSecond: 1
   accMaxSpread: 20
-  name: Weapon
+  name: Ammo
   held: 0
   gunOffset: {x: 0, y: 0}
-  bulletOffset: {x: 0, y: 0}
-  bullet: {fileID: 6337319270428948977, guid: 27a6a697808e01e4a813ce5f9a365f37, type: 3}
+  bulletOffset: {x: 0, y: 1}
+  bullet: {fileID: 6337319270428948977, guid: ffe01133cb30d6d42920f8729dd2368e, type: 3}
   reload: {fileID: 2356793853647123398}
   reloadSound: {fileID: 8300000, guid: b5e9f1a3c9b14f244b4aa0328e350782, type: 3}
   playReload: 1
